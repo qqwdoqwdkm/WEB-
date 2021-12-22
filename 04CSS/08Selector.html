@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 의사선택자 : 선택하고자 하는 HTML 요소의 특별한 상태를 명시할때 사용 */
+        a:link{
+            color:blue;
+        }
+        a:hover{
+            color: brown;
+        }
+        a:visited{
+            color:yellowgreen;
+        }
+        a:active{
+            color:red
+        }
+        
+        #btn1
+        {
+            width: 80px;
+            height: 30px;
+            background-color: coral;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
+        #btn1>a{
+            text-decoration: none;
+        }
+        #btn1>a:hover{
+            cursor: pointer;
+        }
+        #btn1>a:active{
+            color: gray;
+        }
+        #btn>a:visited{
+            color:indigo;
+        }
+
+        #tmp
+        {
+            border: 3px solid wheat;
+            width: 300px;
+            padding: 10px;
+            outline: none;
+            transition: 0.5s;
+        }
+        #tmp:focus
+        {
+            border:3px solid hotpink;
+
+        }
+        #tmp:hover
+        {
+            border: 3px solid lightgreen;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <a href = "#">TEST</a><br>
+    <a href = "https://naver.com">BDCD</a><br>
+    <hr>
+    <div id=btn1><a href="https://google.com">버튼1</a></div>
+    <hr>
+    ID:<input type=text id="tmp">
+
+</body>
+</html>

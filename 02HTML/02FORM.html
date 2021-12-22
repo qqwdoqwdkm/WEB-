@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action = "join.jsp">
+        ID : <input type = text name = userid><br>
+        PW : <input password = next name = pwd><br>
+        EMAIL : <input type = email name = email><br>
+        GENDER : <input type = radio name = gender value = M>남&nbsp;&nbsp;
+                <input type = radio name = gender value = W>여
+                <br>
+        HOBBY : <input type = checkbox name = hobby value = "reading">독서&nbsp;
+                <input type = checkbox name = hobby value = "climing">등산&nbsp;
+                <input type = checkbox name = hobby value = "golf">골프&nbsp;
+                <input type = checkbox name = hobby value = "swimming">수영&nbsp;
+                <br>
+        CONTENT : <br>
+                <textarea rows = 10 cols = 50 name = "memo"></textarea>
+                <br>
+
+        TEL : 
+        <select name=tel>
+            <option value = "053">053</option>
+            <option value = "055">055</option>
+            <option value = "02">02</option>
+        </select>
+        <input name = "tel2" type="text" style = "width : 30px">
+        <input name = "tel3" type="text" style = "width : 40px">
+
+        <input type = submit value = "전송"> 
+
+    </form> 
+</body>
+</html>

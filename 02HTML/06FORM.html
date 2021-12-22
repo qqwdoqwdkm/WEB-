@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- 
+        disabled : 비활성화
+        required : 반드시 입력
+        autofocus : 포커스태그 지정
+     -->
+    
+    <table>
+        <tr>
+            <td width = 100px bgcolor=lightgray>아이디</td>
+            <td><input type = text name = userid disabled></td>
+        </tr>
+        
+        <tr>
+            <td>패스워드</td>
+            <td><input type = password name = pwd required></td>
+        </tr>
+        
+        <tr>
+            <td>성별</td>
+            <td>
+                <input type = radio name = gender value=M> 남   &nbsp;
+                <input type = radio name = gender value=W> 여
+            </td>
+        </tr>
+
+        <tr>
+            <td>취미</td>
+            <td><input type = checkbox name = hobby value = reading>독서 &nbsp;
+            <td><input type = checkbox name = hobby value = climing>등산 &nbsp;
+            <td><input type = checkbox name = hobby value = basketball>농구 &nbsp;
+            <td><input type = checkbox name = hobby value = swimming>수영 &nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td>TEL</td>
+            <td>
+                <select name = tell>
+                    <option value="053">053</option>
+                    <option value="055">055</option>
+                    <option value="02">02</option>
+                </select>
+                -<input type = tell name = tel2 style= "width : 30px" autofocus>
+                -<input type = tell name = tel3 style= "width : 40px">
+            </td>
+            
+            </td>
+        </tr>
+    
+    
+    </table>
+
+
+
+</body>
+</html>
