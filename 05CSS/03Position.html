@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Position : 박스의 위치를 지정
+    static(기본) : viewport의 순서대로 박스를 연걸
+    relative : 확정 html 요소를 기본위치로 잡고 그 위치를 기준으로 현재박스의 위치를 지정()
+    absolute : 확정 html 요소를 기본위치로 잡고 그 위치를 기준으로 현재박스의 위치를 지정
+    fixed : 뷰포트(viewport)를 기준으로  -->
+
+
+    <!-- relative : static 위치를 기준으로 잡는다 -->
+<style>
+    div{
+        
+        width: 100px;
+        height: 50px;
+        background-color: forestgreen;
+        border: 1px solid black;
+    }
+    #b1{
+        position: relative;
+        top:0px;
+        left:0px;
+        z-index: 4;
+    }
+    #b2{
+        position: relative;
+        top: 10px;
+        left:100px;
+    }
+    #b3{
+        position: relative;
+        left: 10px;
+        top: 200px;
+    }
+</style>
+<div id='b1'>1</div>
+<div id='b2'>2</div>
+<div id='b3'>3</div>
+<div id='b4'>4</div>
+
+
+
+
+    
+</body>
+</html>

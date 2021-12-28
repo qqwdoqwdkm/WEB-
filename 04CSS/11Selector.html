@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* .c1 p:first-child
+        {
+            color: chocolate;
+        } */
+        /* 첫번쨰 아이 */
+
+        /* .c1 p:last-child
+        {
+            color: darkcyan;
+        } */
+        /* 마지막 아이 */
+
+
+        /* nth-child() 2n: 짝수 , 2n+1:홀수 odd:홀수, even:짝수 */
+        .c1 p:nth-child(2n)
+        {
+            background-color: darkkhaki;
+        }
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<h1>구조의사선택자 확인</h1>
+
+<div class="c1">
+<!-- <span>첫번쨰 span태그</span><br> -->
+<p>첫번째 단락</p>
+<p>두번째 단락</p>
+<p>세번째 단락</p>
+<p>네번째 단락</p>
+<div style="border: 1px solid red;">
+    <p>첫번째 단락</p>
+    <p>두번째 단락</p>
+    <p>세번째 단락</p>
+    <p>네번째 단락</p>
+    
+    <div style="border: 3px solid green;">
+    <p>첫번째 단락</p>
+    <p>두번째 단락</p>
+    <p>세번째 단락</p>
+    <p>네번째 단락</p>
+    </div>
+    
+    <p>다섯번째 단락</p>
+    <p>여섯째 단락</p>
+    <p>일곱째 단락</p>
+    <p>여덟째 단락</p>
+</div>
+
+<p>다섯번째 단락</p>
+<p>여섯째 단락</p>
+<p>일곱째 단락</p>
+<p>여덟째 단락</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

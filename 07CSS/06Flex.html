@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        *{}
+        body{margin: 0px;}
+        #wrapper{
+            width: 95%;
+            margin: 0px auto;
+        }
+        #header-meta{
+           
+            font-size: 81.25%;
+            color:rgb(68,68,68);
+            background: greenyellow;
+            margin-top: 10px;
+            text-align: right;
+            
+            
+        }
+        #header-meta ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        #header-meta li{
+            margin:0px 10px;
+            
+        }
+        #header-meta a{
+            font-size: 81.25%;
+            text-decoration: none;
+            color:rgb(68,68,68)
+        }
+        nav{
+            background: greenyellow;
+            height: 75px;
+            line-height: 75px;
+            display: flex;
+        }
+        .totalmenu{
+            width: 30%;
+            border: 1px solid gray;
+        }
+        .search{
+            width: 50%;
+            border: 1px solid gray;
+        }
+        .search input{
+            outline: none;
+            height: 30px;
+            width: 80%;
+            border: 0px;
+            
+        }
+        .logo{
+            width: 100%;
+            border: 1px solid gray;
+            text-align: center;
+        }
+        .logo img{
+            vertical-align: 0px;
+        }
+        .usermenu{
+            width: 100%;
+            border: 1px solid gray;
+            text-align: right;
+        }
+        
+        .usermenu a{
+            margin-left: 15px;
+            text-decoration: none;
+            color:rgb(68,68,68)
+        }
+        .usermenu img{
+            vertical-align: -5px;
+        }
+    
+    
+    </style>
+
+    
+</head>
+<body>
+    <div id=wrapper>
+        <div id=header-meta>
+            <ul>
+                <li><a href="#">대한민국</a></li>
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+
+        </div>
+        <nav>
+            <div class='totalmenu'>
+                <img src="bars-solid.svg" width=35 height=35>
+                <span style="vertical-align: 10px; margin-left: 5px;">메뉴</span>
+            </div>
+            <div class='search'>
+                <div style="border: 1px solid gray; height: 40px;margin-top: 15px;">
+                    <img src="search.svg" width=30px height=30px style="vertical-align: 15px;">
+                    <input style="vertical-align: 20px;">
+                </div>
+            </div>
+            <div class='logo'>
+                <img src="https://www.hermes.com/sites/all/themes/custom/hermes/img/hermes-logo-small.svg">
+            </div>
+            <div class='usermenu'>
+            <a href = "#"><img src="person.svg" width=25px height=25px>로그인</a>
+            <a href = "#"><img src="cart.svg" width=25px height=25px>장바구니</a>
+</div>
+        </nav>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

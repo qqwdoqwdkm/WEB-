@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            background-color: orange;
+            height: 50px;
+            width: 100px;
+            margin: 10px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            animation-name: moving;
+            animation-duration: 8s;
+        }
+
+        @keyframes moving{
+            from{left: 0px;}
+            to{left: 700px;}
+        }
+        #d1{
+            animation-timing-function: linear;
+            /* 동일한 속도 */
+        }
+        #d2{
+            animation-timing-function: ease;
+            /* 기본적인 방식 */
+        }
+        #d3{
+            animation-timing-function: ease-in;
+            /* 후반에 가속 */
+        }
+        #d4{
+            animation-timing-function: ease-out;
+            /* 초반에 가속 */
+        }
+        #d5{
+            animation-timing-function: ease-in-out;
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+
+    <div id=d1></div>
+    <div id=d2></div>
+    <div id=d3></div>
+    <div id=d4></div>
+    <div id=d5></div>
+
+    
+</body>
+</html>

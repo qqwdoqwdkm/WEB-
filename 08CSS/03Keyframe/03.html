@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    div{
+        width: 500px;
+        height: 300px;
+        border: 1px solid gray;
+        margin: 20px;
+    }
+    #d1{
+        animation-name: change1;
+        animation-duration: 5s;
+    }
+    #d2{
+        animation-name: change2;
+        animation-duration: 5s;
+    }
+    @keyframes change1{
+        0%{background-color: red;}
+        20%{background-color: orange;}
+        40%{background-color: green;}
+        60%{background-color: blue;}
+        80%{background-color: brown;}
+        100%{background-color: purple;}
+    }
+    @keyframes change2{
+        0%{background-color: red;transform: rotate(0deg);opacity: 0.5;}
+        20%{background-color: orange;}
+        40%{background-color: green; transform: rotate(90deg);opacity: 1;}
+        60%{background-color: blue;}
+        80%{background-color: brown;}
+        100%{background-color: purple; transform: rotate(3600deg);opacity: 0.2;}
+    }
+</style>
+
+
+
+<body>
+
+
+    <div id=d1></div>
+    <br>
+    <div id=d2></div>
+
+
+
+
+    
+</body>
+</html>

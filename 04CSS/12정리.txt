@@ -1,0 +1,26 @@
+기본선택자
+HTML요소/ id / class / 그룹 선택자
+
+결합선택자
+자식선택자 , 자손선택자
+.c1>p		.c1 p
+
+동위선택자
+일반동위 ~, 인접동위 +
+
+의사선택자
+-동적의사
+:hover
+:active
+:focus
+:visited
+
+-상태의사
+:disabled
+:enabled
+:checked
+
+-구조의사
+:nth-child
+:first-child
+:last-child

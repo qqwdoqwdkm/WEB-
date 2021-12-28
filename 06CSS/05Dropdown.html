@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        ul>li{
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: bisque;
+            display: inline-block;
+            position: relative;
+
+        }
+
+        ul a{
+            display: block;
+        }
+
+        .sub{
+            display: none;
+        }
+
+        #menu>li:hover .sub
+        {
+            display: block;
+            position: absolute;
+            
+
+        }
+
+    </style>
+
+
+    <ul id=menu>
+        <li>
+            <a href="#">Menu</a>
+            <ul class="sub">
+                <li>SubMenu1</li>
+                <li>SubMenu2</li>
+                <li>SubMenu3</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Menu</a>
+            <ul class="sub">
+                <li>SubMenu1</li>
+                <li>SubMenu2</li>
+                <li>SubMenu3</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Menu</a>
+            <ul class="sub">
+                <li>SubMenu1</li>
+                <li>SubMenu2</li>
+                <li>SubMenu3</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Menu</a>
+            <ul class="sub">
+                <li>SubMenu1</li>
+                <li>SubMenu2</li>
+                <li>SubMenu3</li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+    
+</body>
+</html>

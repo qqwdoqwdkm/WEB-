@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        div{
+            width: 400px; 
+            height: 40px;
+            border: 1px solid orange;
+            
+        }
+        #d1{
+            animation-name: moving1;
+            animation-duration: 4s;
+            
+        }
+        #d2{
+            animation-name: moving2;
+            animation-duration: 4s;
+        }
+        #d3{
+            animation-name: moving3;
+            animation-duration: 4s;
+        }
+
+        @keyframes moving1{
+            from{margin-left: 100%;}
+            to{margin-left: 0%;}
+        }
+        @keyframes moving2{
+            from{margin-top: 100%;}
+            to{margin-top: 0%;}
+        }
+        @keyframes moving3{
+            from{margin-right: 100%;}
+            to{margin-right: 0%;}
+        }
+
+    </style>
+
+
+
+
+
+<body>
+    
+
+    <div id=d1>TEST1</div>
+    <br>
+    <div id=d2>TEST2</div>
+    <br>
+    <div id=d3>TEST3</div>
+
+
+</body>
+</html>

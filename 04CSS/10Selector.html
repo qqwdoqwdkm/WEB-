@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 상태의사 클래스 : 태그의 상태에 따라 각각의 스타일을 별도로 설정할 수 있다.
+    CSS에서 사용할 수 있는 상태 의사 클래스
+    :checked
+    :enabled
+    :disabled -->
+
+    <style>
+        input[type='radio']:checked + span
+        {
+            color : orange;
+        }
+
+        input[type='radio']:disabled+span
+        {
+            color: red;
+        }
+
+        input[type='radio']:enabled+span
+        {
+            color: chocolate;
+        }
+
+        input[type='checkbox']:checked + span
+        {
+            color : blue;
+        }
+
+    </style>
+
+<body>
+    
+    <input type = "radio" name="lecture" value="html"><span>HTML</span><br>
+    <input type = "radio" name="lecture" value="css"><span>CSS</span><br>
+    <input type = "radio" name="lecture" value="javascript"><span>JAVASCRIPT</span><br>
+    <input type = "radio" name="lecture" value="jquery" disabled><span>JQUERY</span><br>
+    <hr>
+    <input type ="checkbox" name="hobby" value="reading"><span>독서</span><br>
+    <input type ="checkbox" name="hobby" value="climing"><span>등산</span><br>
+    <input type ="checkbox" name="hobby" value="swimming"><span>수영</span><br>
+    
+    
+
+
+
+</body>
+</html>
