@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        #d1{
+            width:200px;height:200px;border:1px solid black;
+        }
+    </style>
+
+    <script>
+        function func1()
+        {
+            // alert("FUNC1클릭함");
+            var d1tg=document.getElementById("d1");
+            d1tg.style.backgroundColor='orange';
+        }
+        function func2()
+        {
+            var d1tg=document.getElementById("d1");
+            d1tg.style.backgroundColor='black';
+            d1tg.style.transform='translate(200px,100px) rotate(210deg)';
+            d1tg.style.transition='1s';
+            
+        }
+        function func3()
+        {
+            var d1tg=document.getElementById("d1");
+            d1tg.style.backgroundColor='blue';
+            d1tg.style.transform='translate(250px,210px) rotate(150deg)';
+            d1tg.style.transition='1s';
+            
+        }
+        function func4()
+        {
+            var d1tg=document.getElementById("d1");
+            d1tg.style.backgroundColor='red';
+            d1tg.style.transform='translate(50px,90px) rotate(270deg)';
+            d1tg.style.transition='1s';
+        }
+
+    </script>
+
+
+    <button onclick="func1()">FUNC1</button>&nbsp;
+    <button onclick="func2()">FUNC2</button>&nbsp;
+    <button onclick="func3()">FUNC3</button>&nbsp;
+    <button onclick="func4()">FUNC4</button>&nbsp;
+
+    <hr>
+    <div id=d1></div>
+
+    
+</body>
+</html>
