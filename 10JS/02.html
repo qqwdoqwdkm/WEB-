@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 노드생성 + 추가하기 -->
+
+    <!-- <button onclick="addElement()">노드추가</button>
+    <hr>
+    <div id=tmp>
+    </div>
+    <script>
+        var i=1;
+        function addElement(){
+            //부모노드찾기
+            var tmp=document.getElementById("tmp");
+            //새노드 생성
+            var newtg=document.createElement("p");
+            newtg.innerHTML=i+"P태그추가됨";
+            //부모노드에 새노드를 연결(마지막에연결)
+            //tmp.appendChild(newtg);          //하나만 추가
+            //tmp.append(newtg);                  //여러개 동시에 추가 가능
+            //처음 위치에 연결
+            tmp.prepend(newtg);
+            i++;
+        }
+    </script> -->
+
+
+    <!-- <input id="txt"> <button onclick="func1()">버튼</button>
+    <hr>
+    <ul id=travel></ul>
+    <script>
+        //텍스트박스에 가고싶은 여행지를 입력하고 버튼을 누르면
+        //travel에 li태그가 추가될수있도록하세요
+        function func1(){
+        var str = document.getElementById("txt");
+            //부모노드찾기
+            var tmp=document.getElementById("travel");
+            //새노드 생성
+            var newtg=document.createElement("li");
+            newtg.innerHTML=str.value;
+            str.value="";
+            //부모노드에 새노드를 연결
+            tmp.appendChild(newtg);          //하나만 추가
+        }
+         
+    </script> -->
+
+
+    <!--  중간노드에 추가before() , 노드 삭제하기 remove()-->
+
+    <ul>
+        <li id=li1>ITEM1</li>
+        <li id=li2>ITEM2</li>
+        <li id=li3>ITEM3</li>
+    </ul>
+    <script>
+        //중간 삽입
+        var litg = document.getElementById('li2');
+        var newtg1=document.createElement('li');
+        newtg1.innerHTML='AFTER';
+        var newtg2=document.createElement('li');
+        newtg2.innerHTML='BEFORE';
+
+        li2.before(newtg2); //대상노드 이전에 추가
+        li2.after(newtg1);  //대상노드 이후에 추가
+        //li2.remove();       //대상노드 삭제 
+        
+
+    </script>
+</body>
+</html>
