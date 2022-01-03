@@ -7,28 +7,58 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <!-- on 마우스이벤트처리 -->
 
-
-    <!-- on 마우스 이벤트 처리 -->
-    <div id=d1 style="width:200px; height:200px; border:1px solid gray">
+    <!-- <div  id=d1 style="width:200px;height:200px;border:1px solid gray;">
         <h2 id='h2'>HELLO</h2>
     </div>
-
     <script>
         var divtg=document.getElementById('d1');
         divtg.addEventListener('click',function(){
-            document.getElementById('h2').innerHTML='Click!';
+             document.getElementById('h2').innerHTML='Click!';
         })
-    </script>
+        divtg.addEventListener('mouseover',function(){
+            document.getElementById('h2').innerHTML='MouseOver!';
+        })
+        divtg.addEventListener('mouseleave',function(){
+            document.getElementById('h2').innerHTML='Mouseleave!';
+        })
+    </script> -->
 
-    <!-- on 키보드 이벤트 처리 -->
+
+    <!-- on 키보드 이벤트처리 -->
+
+    KEYUP : <input id='txt1'><br>
+    <p id='p1'></p>
+    <hr>
+    KEYDOWN : <input id='txt2'><br>
+    <p id='p2'></p>
+    <hr>
+    KEYPRESS : <input id='txt3'><br>
+    <p id='p3'></p>
+    <hr>
+    <script>
+        var txt1=document.getElementById('txt1');
+        txt1.addEventListener('keyup',function(){
+            // console.log(event.type+" "+event.target);
+            console.log(event.keyCode);
+        });
+
+        var txt2=document.getElementById('txt2');
+            txt2.addEventListener('keydown',function(){
+            console.log(event.keyCode);
+        });
+
+        var txt3=document.getElementById('txt3');
+            txt3.addEventListener('keypress',function(){
+            console.log(event.keyCode);
+        });
+    </script>
 
     <!-- 스크롤이벤트 처리 -->
 
-    <!-- 브라우저 이벤트 처리 -->
+    <!-- 브라우저 이벤트처리 -->
 
-
-
-    
 </body>
 </html>

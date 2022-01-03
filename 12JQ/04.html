@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+
+
+    <ul>
+        <li id='li1'>LIST1</li>
+        <li id='li2'>LIST2</li>
+        <li id='li3'>LIST3</li>
+        <li id='li4'>LIST4</li>
+    </ul>
+
+    <script>
+
+        $('#li2').before('<li>before</li>');
+        $('#li2').after('<li>after</li>');
+
+    </script>
+    
+</body>
+</html>

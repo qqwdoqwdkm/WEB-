@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+    <style>
+        div{width: 300px;height: 300px;overflow: auto;border: 1px solid gray;}
+    </style>
+
+</head>
+<body>
+
+    <!-- <div id=d1></div>
+    <div id=d2></div>
+
+    <script>
+        //자바스크립트로 노드연결
+        var d1tg=document.getElementById('d1');
+        var newd1=document.createElement('div');
+        newd1.innerHTML='TEST';
+        d1tg.appendChild(newd1);
+
+        //제이쿼리
+        $('#d2').append("<div style = 'height:30px;'>TEST~</div>");
+        $('#d2').append("<div style = 'height:30px;'>TEST~</div>");
+        $('#d2').append("<div style = 'height:30px;'>TEST~</div>");
+        $('#d2').append("<div style = 'height:30px;'>TEST~</div>");
+
+    </script> -->
+
+
+    
+    <!-- 텍스트박스에 가고싶은 여행지를 입력하고 버튼을 누르면
+    travel에 li태그가 추가될수있도록하세요 -->
+
+    <input id="txt"> <button onclick="func1()">버튼</button>
+    <hr>
+    <ul id=travel></ul>
+    <script>
+        //텍스트박스에 가고싶은 여행지를 입력하고 버튼을 누르면
+        //travel에 li태그가 추가될수있도록하세요
+        function func1(){
+            //제이쿼리로 처리해보세요~
+            // $('#txt').val()
+            $('#travel').append('<li>' + ($('#txt').val())+'</li>' );
+            $('#txt').val('');
+        }
+         
+    </script>
+
+
+
+
+
+
+    
+</body>
+</html>

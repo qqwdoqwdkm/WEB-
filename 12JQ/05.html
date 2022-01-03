@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+</head>
+<body>
+
+    <!-- 마우스 이벤트(onclick, onmouseover, onmouseLeave) -->
+    <!-- <style>
+        div{width: 300px;height: 300px; border: 1px solid gray;}
+    </style>
+
+    <div id=d1>HELLO</div>
+    
+    <script>
+        $('#d1').on('click',function(){
+            $(this).html("ONCLICK!!");
+        })
+
+        $('#d1').on('mouseover',function(){
+            $(this).html("ONMouseOver!!");
+        })
+
+        $('#d1').on('mouseleave',function(){
+            $(this).html("ONMouseLeave!!");
+        })
+    </script> -->
+
+
+
+
+    <!-- 키보드 이벤트
+
+    <input id='txt'>
+    
+    <script>
+        $('#txt').on('keyup',function(){
+            var tmp=$('#txt').val();
+            $('#d1').append(tmp);
+        ;})
+        //txt박스에 엔터키를 치면 txt박스의 value가 d1태그내에 추가될수있도록 설정
+
+    </script> -->
+<!-- 키보드 이벤트 잘 안됨 -->
+
+
+
+
+
+<!-- 스크롤 이벤트 -->
+<!-- <style>
+    body{height: 5000px;}
+</style>
+<script>
+    $(window).on('scroll',function() {
+        console.log("Position : " + document.documentElement.scrollTop);
+    })
+</script> -->
+
+
+
+
+
+<!-- 창크기조절에 따른 이벤트 -->
+
+<script>
+    $(window).resize(function() {
+        console.log(window.outerWidth);
+    })
+</script>
+
+<!-- 제이쿼리를 이용해서 스크롤 이동시 헤더 상단 고정 -->
+<!-- 제이쿼리를 이용해서 윈도우 사이즈별로 표시되는 헤더정보 다르게 해보기 -->
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{}
+        body{height: 5000px;margin: 0px;}
+        header{height: 30px; background-color: blueviolet;}
+        nav{height: 60px; background-color: burlywood;}
+        content{display: block;}
+        
+        #content1{height: 800px; background-color: rgb(69, 163, 167);}
+        #content2{height: 800px; background-color: rgb(55, 82, 83);}
+        #content3{height: 800px; background-color: rgb(9, 10, 10);}
+    </style>
+
+
+    <div id=wrapper>
+
+        <header>
+
+        </header>
+
+        <nav id='gnb'>
+
+        </nav>
+
+        <content id=content1></content>
+        <content id=content2></content>
+        <content id=content3></content>
+    </div>
+
+    <script>
+        var gnb=document.getElementById('gnb');
+        document.addEventListener('scroll',function(){
+            var top=document.documentElement.scrollTop;
+            if(top>=40){
+                gnb.style.position='fixed';
+                gnb.style.left="0px";
+                gnb.style.top="0px";
+                gnb.style.width="100%";
+            }
+            else{
+                gnb.style.position='static';
+                gnb.style.left="0px";
+                gnb.style.top="0px";
+                gnb.style.width="100%";
+            }
+            
+            
+        })
+    </script>
+    
+</body>
+</html>
