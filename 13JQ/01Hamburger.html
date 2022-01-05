@@ -8,20 +8,19 @@
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
-
     <style>
+
         #menu{
-            cursor: pointer;
+            cursor:pointer;
         }
-        span{
-            display: block;
-            width: 35px;
-            height: 5px;
+        span{ 
+            display:block;
+            width:35px;
+            height:5px;
             background-color: black;
-            margin: 5px;
+            margin:5px;
         }
     </style>
-
     <div id="menu">
         <span id="top"></span>
         <span id="middle"></span>
@@ -30,21 +29,23 @@
 
     <script>
         var flag=false;
-        $("#menu").on('click',function() {
+        $('#menu').on('click',function(){
             if(flag==false)
             {
-                $('#top').css('transform','translate(0px,10px) rotate(45deg)',).css('transition','3s');
-                $('#middle').css('opacity','0').css('transition','3s');
-                $('#bottom').css('transform','translate(0px,-10px) rotate(-45deg)').css('transition','3s');
+                $('#top').css('transform','translate(0px,10px) rotate(45deg)').css('transition','0.3s');
+                $('#middle').css('opacity','0').css('transition','0.3s');
+                $('#bottom').css('transform','translate(0px,-10px) rotate(-45deg)').css('transition','0.3s');
                 flag=true;
             }else{
-                $('#top').css('transform','translate(0px,00px) rotate(0deg)',).css('transition','3s');
-                $('#middle').css('opacity','100').css('transition','3s');
-                $('#bottom').css('transform','translate(0px,00px) rotate(0deg)').css('transition','3s');
+                $('#top').css('transform','translate(0px,0px) rotate(0deg)').css('transition','0.3s');
+                $('#middle').css('opacity','1').css('transition','0.3s');
+                $('#bottom').css('transform','translate(0px,0px) rotate(0deg)').css('transition','0.3s');
                 flag=false;
             }
-        })
+
+        });
+
+        
     </script>
-    
 </body>
 </html>
